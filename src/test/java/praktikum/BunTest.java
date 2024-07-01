@@ -10,6 +10,7 @@ public class BunTest {
 
     private final String name;
     private final float price;
+    private static final double DELTA = 0.0;
 
     @Parameterized.Parameters
     public static Object[][] data() {
@@ -35,6 +36,6 @@ public class BunTest {
     @Test
     public void testGetPrice() {
         Bun bun = new Bun(name, price);
-        assertEquals(price, bun.getPrice(), 0.0);
+        assertEquals(price, bun.getPrice(), DELTA);
     }
 }

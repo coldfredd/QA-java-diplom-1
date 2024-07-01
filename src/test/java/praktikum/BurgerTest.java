@@ -25,7 +25,6 @@ public class BurgerTest {
     @Before
     public void setBurger(){
         burger = new Burger();
-        burger = new Burger();
         Mockito.when(bun.getPrice()).thenReturn(2.0f);
         Mockito.when(bun.getName()).thenReturn("Burger King");
 
